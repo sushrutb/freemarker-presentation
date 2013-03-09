@@ -38,6 +38,35 @@
 <#macro slide_3>
 <div>
 	<div class="row span12">
+		<h1>Why Freemarker?</h1>
+		<hr/>
+	</div>
+	
+	<span class="row span12" style="font-size:22px;margin-top:120px;line-height:56px;">
+		<ul>
+			<li style="line-height:24px;">Simple</li>
+			<li style="line-height:24px;">Powerful
+				<ul>
+					<li style="line-height:24px;">Code reuse - Macros</li>
+					<li style="line-height:24px;">Template libraries - for larger projects</li>
+					<li style="line-height:24px;">Arbitrary data models</li>
+				</ul>
+			</li>
+			<li style="line-height:24px;">Fast
+				<ul>
+					<li style="line-height:24px;">Caching</li>
+					<li style="line-height:24px;">Fast page assembly</li>
+				</ul>
+			</li>
+			<li style="line-height:24px;">Testing of markup is easy</li>
+		</ul>
+	</span>
+</div>
+</#macro>
+
+<#macro slide_4>
+<div>
+	<div class="row span12">
 		<h1>What is Wisebuy.in?</h1>
 		<hr/>
 	</div>
