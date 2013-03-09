@@ -194,3 +194,38 @@
 	</span>
 </div>
 </#macro>
+<#macro slide_9>
+<div>
+	<div class="row span12">
+		<h1>Custom Framework</h1>
+		<hr/>
+	</div>
+	
+	<span class="row span12" style="font-size:22px;margin-top:120px;line-height:56px;">
+		<ul>
+			<li style="line-height:34px;">ursl.yml</li>
+			<li style="line-height:34px;">Data model creation</li>
+			<li style="line-height:34px;">Callbacks using reflection</li>
+			<li style="line-height:34px;">FTL Libraries</li>
+		</ul>
+	</span>
+</div>
+</#macro>
+<#macro slide_10>
+<div style="text-align:center;">
+	<div class="row span12">
+		<h1>Thank You!</h1>
+		<hr/>
+	</div>
+	<span class="row span12" style="text-align:center;font-size:32px;">
+		<h3>Pune Java User Group</h3>
+		<h5>9th March 2013</h5>
+	</span>
+	<span class="row span12" style="text-align:center;font-size:22px;margin-top:120px;">
+		<h3>by <a href="http://linkedin.com/in/sushrutbidwai">Sushrut Bidwai</a></h3>
+	</span>
+	<span class="row span12" style="text-align:center;font-size:22px;">
+		<h4><a href="http://wisebuy.in">Wisebuy.in</a></h4>
+	</span>
+</div>
+</#macro>
