@@ -140,6 +140,7 @@
 	</span>
 </div>
 </#macro>
+
 <#macro slide_7>
 <div>
 	<div class="row span12">
@@ -176,23 +177,20 @@
 	</span>
 </div>
 </#macro>
-
-
-<#macro slide_12>
+<#macro slide_8>
 <div>
 	<div class="row span12">
-		<h1>What is Wisebuy.in?</h1>
+		<h1>Namespaces and FTL Libraries</h1>
 		<hr/>
 	</div>
-	<span class="row span12">
-	<pre class="prettyprint">	
+	
+	<span class="row span12" style="font-size:22px;margin-top:120px;line-height:56px;">
 		<ul>
-			<li>Shopping search engine</li>
-			<li>1 Million+ products</li>
-			<li>From 50+ stores</li>
-			<li>80+ categories</li>
+			<li style="line-height:34px;">Global and local variables</li>
+			<li style="line-height:34px;">Import with a hash name</li>
+			<li style="line-height:34px;">Helps in dividing up larger project</li>
+			<li style="line-height:34px;">Creating re-usable components</li>
 		</ul>
-	</pre>
 	</span>
 </div>
 </#macro>

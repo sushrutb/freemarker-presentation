@@ -40,7 +40,7 @@ public class CompilePresentation {
 
 		Map root = new HashMap();
 		List<String> slides = new ArrayList<String>();
-		for (int i = 0; i < 7; i++) {
+		for (int i = 0; i < 8; i++) {
 			slides.add("slide_" + (i + 1));
 		}
 
