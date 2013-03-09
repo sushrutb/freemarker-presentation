@@ -20,14 +20,14 @@ import freemarker.template.TemplateException;
 
 /**
  * @author sushrut
- *
+ * 
  */
 public class CompilePresentation {
 
 	/**
 	 * @param args
-	 * @throws IOException 
-	 * @throws TemplateException 
+	 * @throws IOException
+	 * @throws TemplateException
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) throws IOException, TemplateException {
@@ -40,11 +40,12 @@ public class CompilePresentation {
 
 		Map root = new HashMap();
 		List<String> slides = new ArrayList<String>();
-		slides.add("slide_1");
-		slides.add("slide_2");
-		slides.add("slide_3");
+		for (int i = 0; i < 7; i++) {
+			slides.add("slide_" + (i + 1));
+		}
+
 		root.put("slideslist", slides);
-		
+
 		Writer out = new OutputStreamWriter(new FileOutputStream(new File("/home/sushrut/freemarkerpresentation/presentation/index.html")));
 		temp.process(root, out);
 		out.flush();

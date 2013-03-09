@@ -63,8 +63,122 @@
 	</span>
 </div>
 </#macro>
-
 <#macro slide_4>
+<div>
+	<div class="row span12">
+		<h1>Template Structure</h1>
+		<hr/>
+	</div>
+	
+	<span class="row span12" style="font-size:22px;margin-top:120px;line-height:56px;">
+	<#noparse>
+	<pre class="prettyprint linenums">
+	<code>
+		&lt;html&gt;
+		&lt;head&gt;
+		  &lt;title&gt;Welcome!&lt;/title&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+		  &lt;#-- Greet the user with his/her name --&gt;
+		  &lt;h1&gt;Welcome ${user}!&lt;/h1&gt;
+		  &lt;p&gt;We have these animals:
+		  &lt;ul&gt;
+		  &lt;#list animals as being&gt;
+		    &lt;li&gt;${being.name} for ${being.price} Euros
+		  &lt;/#list&gt;
+		  &lt;/ul&gt;
+		&lt;/body&gt;
+		&lt;/html&gt;
+	</code>  
+	</pre>
+	</#noparse>
+	</span>
+</div>
+</#macro>
+<#macro slide_5>
+<div>
+	<div class="row span12">
+		<h1>Directives</h1>
+		<hr/>
+	</div>
+	
+	<span class="row span12" style="font-size:22px;margin-top:120px;line-height:56px;">
+		<ul>
+			<li style="line-height:24px;">if / else /elseif </li>
+			<li style="line-height:24px;">switch / case / default / break </li>
+			<li style="line-height:24px;">list / break </li>
+			<li style="line-height:24px;">include / import </li>
+			<li style="line-height:24px;">function / return </li>
+			<li style="line-height:24px;">macro / nested / return</li>
+			<li style="line-height:24px;">visit / recurse / fallback - used for xml processing</li>
+		</ul>
+	</span>
+</div>
+</#macro>
+<#macro slide_6>
+<div>
+	<div class="row span12">
+		<h1>Macro  and nesting</h1>
+		<hr/>
+	</div>
+	
+	<span class="row span12" style="font-size:22px;margin-top:120px;line-height:56px;">
+	<#noparse>
+	<pre class="prettyprint linenums">
+	<code>
+			&lt;#macro repeat count&gt;
+			  &lt;#list 1..count as x&gt;
+			    &lt;#nested x, x/2, x==count&gt;
+			  &lt;/#list&gt;
+			&lt;/#macro&gt;
+			&lt;@repeat count=4 ; c, halfc, last&gt;
+			  ${c}. ${halfc}&lt;#if last&gt; Last!&lt;/#if&gt;
+			&lt;/@repeat&gt;  
+	</code>
+	</pre>
+	</#noparse>
+	</span>
+</div>
+</#macro>
+<#macro slide_7>
+<div>
+	<div class="row span12">
+		<h1>Templating templates</h1>
+		<hr/>
+	</div>
+	
+	<span class="row span12">
+	<#noparse>
+	<pre class="prettyprint linenums">
+	<code>
+		&lt;#macro page_html&gt; 
+		&lt;!DOCTYPE html&gt;
+		&lt;html lang="en"&gt;
+			&lt;@page_head/&gt;
+		    &lt;body&gt;
+		    	&lt;@navbar/&gt;
+		    	&lt;@productmenu/&gt;
+				&lt;form name="mainForm" class="form-inline" method="GET" action="/products"&gt;
+				&lt;div style="margin-top:20px;margin-bottom:20px;"&gt;    	
+			   		&lt;@searchbar/&gt;
+		   		&lt;/div&gt;
+		   		&lt;@page_view/&gt;
+		    	&lt;/form&gt;
+				&lt;@aboutcontent/&gt;
+		   		&lt;@footer/&gt;
+		   		&lt;@social_buttons/&gt;
+		    &lt;/body&gt;
+		&lt;/html&gt;
+		&lt;/#macro&gt; 
+	</code>
+	</pre>
+	</#noparse>
+	</span>
+</div>
+</#macro>
+
+
+<#macro slide_12>
 <div>
 	<div class="row span12">
 		<h1>What is Wisebuy.in?</h1>
