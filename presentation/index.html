@@ -9,7 +9,6 @@
 
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/bootstrap-modal.css" rel="stylesheet">
-    <link href="assets/css/jquery-ui-1.9.2.custom.min.css" rel="stylesheet">
 	
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -22,8 +21,9 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css'>
   </head>
-    <body>
+    <body style="font-family:'Roboto Condensed'">
     
+<div class="container">
 <div id="myCarousel" class="carousel slide">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -32,16 +32,45 @@
   </ol>
   <!-- Carousel items -->
   <div class="carousel-inner">
-	    <div class="active item">
-1
+		<div class="active item">
+	  		<div class="container" style="max-height:6500px;">
+		  		<div style="min-height:650px;">
+<div style="text-align:center;">
+	<div class="row span12">
+		<h1>Freemarker Presentation</h1>
+		<hr/>
+	</div>
+	
+	<span class="row span12" style="text-align:center;font-size:32px;">
+		<h3>Pune Java User Group</h3>
+		<h5>9th March 2013</h5>
+	</span>
+	<span class="row span12" style="text-align:center;font-size:22px;margin-top:120px;">
+		<h3>by <a href="http://linkedin.com/in/sushrutbidwai">Sushrut Bidwai</a></h3>
+	</span>
+	<span class="row span12" style="text-align:center;font-size:22px;">
+		<h4><a href="http://wisebuy.in">Wisebuy.in</a></h4>
+	</span>
+</div>
+				</div>
+		    </div>
 	    </div>
-	    <div class=" item">
-2
+		<div class="item">
+	  		<div class="container" style="max-height:6500px;">
+		  		<div style="min-height:650px;">
+<h1>Freemarker Presentation</h1>
+<hr/>
+<span style="text-align:center;">
+by Sushrut Bidwai
+</span>
+				</div>
+		    </div>
 	    </div>
   </div>
   <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev" style="margin-left:-100px;">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next" style="margin-right:-100px;">&rsaquo;</a>
+</div>
 </div>
     
     <script src="assets/jquery.js"></script>
@@ -49,11 +78,11 @@
     <script src="assets/bootstrap-modal.js"></script>
     <script src="assets/bootstrap-modalmanager.js"></script>
     <script> 
-    $('.carousel').carousel({
-  		interval: 2000
-	})
-	$('.carousel').carousel('pause');
-	</script>
+	$(function() {
+	    $('.carousel').each(function(){
+	        $(this).carousel({
+	            interval: false});});});
+    </script>
     
     </body>
 </html>

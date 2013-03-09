@@ -5,7 +5,6 @@
 
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/bootstrap-modal.css" rel="stylesheet">
-    <link href="assets/css/jquery-ui-1.9.2.custom.min.css" rel="stylesheet">
 	
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

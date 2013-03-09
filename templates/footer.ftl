@@ -4,10 +4,10 @@
     <script src="assets/bootstrap-modal.js"></script>
     <script src="assets/bootstrap-modalmanager.js"></script>
     <script> 
-    $('.carousel').carousel({
-  		interval: 2000
-	})
-	$('.carousel').carousel('pause');
-	</script>
+	$(function() {
+	    $('.carousel').each(function(){
+	        $(this).carousel({
+	            interval: false});});});
+    </script>
     
 </#macro>
