@@ -42,6 +42,7 @@ public class CompilePresentation {
 		List<String> slides = new ArrayList<String>();
 		slides.add("slide_1");
 		slides.add("slide_2");
+		slides.add("slide_3");
 		root.put("slideslist", slides);
 		
 		Writer out = new OutputStreamWriter(new FileOutputStream(new File("/home/sushrut/freemarkerpresentation/presentation/index.html")));
