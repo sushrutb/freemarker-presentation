@@ -70,7 +70,7 @@
 		<hr/>
 	</div>
 	
-	<span class="row span12" style="font-size:22px;margin-top:120px;line-height:56px;">
+	<span class="row span12">
 	<#noparse>
 	<pre class="prettyprint linenums">
 	<code>
@@ -122,7 +122,7 @@
 		<hr/>
 	</div>
 	
-	<span class="row span12" style="font-size:22px;margin-top:120px;line-height:56px;">
+	<span class="row span12">
 	<#noparse>
 	<pre class="prettyprint linenums">
 	<code>
